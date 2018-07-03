@@ -4,9 +4,10 @@
     <h2>Errors:</h2>
     <ul>
       <% @author.errors.full_messages.each do |m| %>
-      <li><%= m %></li>
+        <li><%= m %></li>
+      <% end %>
     </ul>
-  
+
 
 <%= form_tag authors_path, method: "post" do %>
   <div class="field">
